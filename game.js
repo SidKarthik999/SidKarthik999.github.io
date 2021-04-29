@@ -9,9 +9,7 @@ var speed = "Slow"
 
 function Init() {
     bomb = document.getElementById("veggieBomb");
-    bomb2 = document.getElementById("veggieBomb2")
     asparagus = document.getElementById("asparagus")
-    asparagus2 = document.getElementById("asparagus2")
     burger = document.getElementById("hamburger")
     burger2 = document.getElementById("hamburger2")
     burger3 = document.getElementById("hamburger3")
@@ -22,9 +20,6 @@ function Init() {
 
     asparagusW = screen.height - asparagus.height;
     asparagusH = screen.width - asparagus.width;
-    
-    asparagus2W = screen.height - asparagus2.height;
-    asparagus2H = screen.width - asparagus2.width;
 
     burgerW = screen.height - burger.height;
     burgerH = screen.width - burger.width;
@@ -49,9 +44,6 @@ function Init() {
     
     bombW = screen.height - bomb.height;
     bombH = screen.width - bomb.width;
-    
-    bomb2W = screen.height - bomb2.height;
-    bomb2H = screen.width - bomb2.width;
     
     document.getElementById("speed").innerHTML = "We're Starting Off Slow"
     document.getElementById("win").innerHTML = "You're Playing The Game";
@@ -87,12 +79,6 @@ function moveIt() {
 
     asparagus.style.top = Math.round(Math.random()*asparagusW) + "px"
     asparagus.style.left = Math.round(Math.random()*asparagusH) + "px"
-    
-    bomb2.style.top = Math.round(Math.random()*bomb2W) + "px"
-    bomb2.style.left = Math.round(Math.random()*bomb2H) + "px"
-
-    asparagus2.style.top = Math.round(Math.random()*asparagus2W) + "px"
-    asparagus2.style.left = Math.round(Math.random()*asparagus2H) + "px"
 }
 
 function moveBurger() {
@@ -307,8 +293,6 @@ function lose() {
     document.getElementById("hamburger7").style.visibility = "hidden"
     document.getElementById("veggieBomb").style.visibility = "hidden"
     document.getElementById("asparagus").style.visibility = "hidden"
-    document.getElementById("veggieBomb2").style.visibility = "hidden"
-    document.getElementById("asparagus2").style.visibility = "hidden"
 
     setTimeout(() => {
         location.reload()
