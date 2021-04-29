@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <style>
+        #veggieBomb, #hamburger, #hamburger2, #hamburger3, #hamburger4, #hamburger5, #hamburger6, #hamburger7, #asparagus {
+            position: fixed;
+        }
+        
+    </style>
+    <script type="text/javascript" src="game.js">
+
+    </script>
+</head>
+
+<body>
+    <button onClick = "Init()">START</button>
+    <p id="win">Click START To Begin</p>
+    <p id="score"></p>
+    <p id="highscore"></p>
+    <p id="speed"></p>
+
+    <img id="veggieBomb" src="projectImages/veggie.png" onClick="lose()"
+        style=" width: 100; height: 100;" />
+    <img id="hamburger" src="projectImages/bURGEFR.png" onClick="hideBurger1()" style=" width: 100; height: 100;" />
+    <img id="hamburger2" src="projectImages/bURGEFR2.png" onClick="hideBurger2()" style=" width: 100; height: 100;" />
+    <img id="hamburger3" src="projectImages/bURGEFR3.png" onClick="hideBurger3()" style=" width: 100; height: 100;" />
+    <img id="hamburger4" src="projectImages/bURGEFR3.png" onClick="hideBurger4()" style=" width: 100; height: 100;" />
+    <img id="hamburger5" src="projectImages/bURGEFR3.png" onClick="hideBurger5()" style=" width: 100; height: 100;" />
+    <img id="hamburger6" src="projectImages/bURGEFR3.png" onClick="hideBurger6()" style=" width: 100; height: 100;" />
+    <img id="hamburger7" src="projectImages/bURGEFR3.png" onClick="hideBurger7()" style=" width: 100; height: 100;" />
+    <img id="Back" src="projectImages/Background.png" onClick="BackGround()" style=" width:1410; height: 660;" />
+    <img id="asparagus" src = "projectImages/asparagus.png" onClick="lose()" style="width:100; height:100;" />
+
+
+</body>
+
+</html>
