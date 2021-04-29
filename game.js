@@ -47,6 +47,28 @@ function Init() {
     
     document.getElementById("speed").innerHTML = "We're Starting Off Slow"
     document.getElementById("win").innerHTML = "You're Playing The Game";
+    
+    burger.style.top = Math.round(Math.random()*burgerW) + "px"
+    burger.style.left = Math.round(Math.random()*burgerH) + "px"
+
+    burger2.style.top = Math.round(Math.random()*burger2W) + "px"
+    burger2.style.left = Math.round(Math.random()*burger2H) + "px"
+
+    burger3.style.top = Math.round(Math.random()*burger3W) + "px"
+    burger3.style.left = Math.round(Math.random()*burger3H) + "px"
+    
+    burger4.style.top = Math.round(Math.random()*burger4W) + "px"
+    burger4.style.left = Math.round(Math.random()*burger4H) + "px"
+
+    burger5.style.top = Math.round(Math.random()*burger5W) + "px"
+    burger5.style.left = Math.round(Math.random()*burger5H) + "px"
+
+    burger6.style.top = Math.round(Math.random()*burger6W) + "px"
+    burger6.style.left = Math.round(Math.random()*burger6H) + "px"
+
+    burger7.style.top = Math.round(Math.random()*burger7W) + "px"
+    burger7.style.left = Math.round(Math.random()*burger7H) + "px"
+    
     setInterval(moveIt, 1000)
     setInterval(moveBurger, 5000)
 }
