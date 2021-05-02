@@ -16,30 +16,44 @@
         #asparagus3,
         #veggieBomb3 {
             position: fixed;
+            z-index: 20;
         }
 
         #score {
             position: absolute;
             top: 2px;
             left: 16px;
+            z-index: 40;
+            font-size: 125%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         }
 
         #highscore {
             position: absolute;
             top: 40px;
             left: 16px;
+            z-index: 40;
+            font-size: 125%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         }
 
         #speed {
             position: absolute;
             top: 18px;
             left: 16px;
+            z-index: 40;
+            font-size: 125%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         }
 
         #win {
             position: absolute;
             top: 35px;
             left: 16px;
+            z-index: 40;
+            font-size: 125%;
+            color: red;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         }
 
         #btn{
@@ -77,10 +91,21 @@
             padding: 12px 24px;
             border-radius: 5px;
         }
-
-        #Back {
+        #Back2 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
             max-width: 100%;
             height: auto;
+            z-index: 30;
+            
+        }
+        #Back {
+            top: 0px;
+            left: 0px;
+            max-width: 100%;
+            height: auto;
+            z-index: 10;
         }
     </style>
     <script type="text/javascript" src="game.js">
@@ -108,6 +133,7 @@
     <img id="hamburger6" src="projectImages/bURGEFR3.png" onClick="hideBurger6()" style=" width: 100; height: 100;" />
     <img id="hamburger7" src="projectImages/bURGEFR3.png" onClick="hideBurger7()" style=" width: 100; height: 100;" />
     <img id="Back" src="projectImages/Background.png" onClick="BackGround()" style=" width:1430; height: 800;" />
+    <img id="Back2" src="projectImages/Background.png" onClick="BackGround()" style=" width:1430; height: 800;" />
     <img id="asparagus" src="projectImages/asparagus.png" onClick="lose()" style="width:100; height:100;" />
     <img id="asparagus2" src="projectImages/asparagus.png" onClick="lose()" style="width:100; height:100;" />
     <img id="asparagus3" src="projectImages/asparagus.png" onClick="lose()" style="width:100; height:100;" />
