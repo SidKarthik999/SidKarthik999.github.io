@@ -7,7 +7,35 @@
 
 var speed = "Slow"
 
+function revealDirections() {
+
+    document.getElementById("btn2").style.visibility = "hidden"
+    document.getElementById("Directions").style.visibility = "visible"
+
+}
+
+function hideAll() {
+    document.getElementById("veggieBomb").style.visibility = "hidden"
+    document.getElementById("asparagus").style.visibility = "hidden"
+    document.getElementById("veggieBomb2").style.visibility = "hidden"
+    document.getElementById("asparagus2").style.visibility = "hidden"
+    document.getElementById("veggieBomb3").style.visibility = "hidden"
+    document.getElementById("asparagus3").style.visibility = "hidden"
+    document.getElementById("hamburger").style.visibility = "hidden"
+    document.getElementById("hamburger2").style.visibility = "hidden"
+    document.getElementById("hamburger3").style.visibility = "hidden"
+    document.getElementById("hamburger4").style.visibility = "hidden"
+    document.getElementById("hamburger5").style.visibility = "hidden"
+    document.getElementById("hamburger6").style.visibility = "hidden"
+    document.getElementById("hamburger7").style.visibility = "hidden"
+    document.getElementById("Directions").style.visibility = "hidden"
+}
+
 function Init() {
+    document.getElementById("btn").style.visibility = "hidden"
+    document.getElementById("win").style.visibility = "hidden"
+    document.getElementById("btn2").style.visibility = "hidden"
+    document.getElementById("Directions").style.visibility = "hidden"
     bomb = document.getElementById("veggieBomb");
     asparagus = document.getElementById("asparagus")
     bomb2 = document.getElementById("veggieBomb2");
@@ -21,6 +49,20 @@ function Init() {
     burger5 = document.getElementById("hamburger5")
     burger6 = document.getElementById("hamburger6")
     burger7 = document.getElementById("hamburger7")
+
+    document.getElementById("veggieBomb").style.visibility = "visible"
+    document.getElementById("asparagus").style.visibility = "visible"
+    document.getElementById("veggieBomb2").style.visibility = "visible"
+    document.getElementById("asparagus2").style.visibility = "visible"
+    document.getElementById("veggieBomb3").style.visibility = "visible"
+    document.getElementById("asparagus3").style.visibility = "visible"
+    document.getElementById("hamburger").style.visibility = "visible"
+    document.getElementById("hamburger2").style.visibility = "visible"
+    document.getElementById("hamburger3").style.visibility = "visible"
+    document.getElementById("hamburger4").style.visibility = "visible"
+    document.getElementById("hamburger5").style.visibility = "visible"
+    document.getElementById("hamburger6").style.visibility = "visible"
+    document.getElementById("hamburger7").style.visibility = "visible"
 
     asparagusW = screen.height - asparagus.height;
     asparagusH = screen.width - asparagus.width;
@@ -311,6 +353,7 @@ function hideBurger7() {
 var loss = "YOU LOST ):";
 
 function lose() {
+    document.getElementById("win").style.visibility = "visible"
     document.getElementById("win").innerHTML = loss;
     console.log(loss)
     document.getElementById("hamburger").style.visibility = "hidden"
@@ -324,9 +367,144 @@ function lose() {
     document.getElementById("asparagus").style.visibility = "hidden"
     document.getElementById("veggieBomb2").style.visibility = "hidden"
     document.getElementById("asparagus2").style.visibility = "hidden"
-    
-
+    document.getElementById("veggieBomb3").style.visibility = "hidden"
+    document.getElementById("asparagus3").style.visibility = "hidden"
+    setTimeout(() => {
+        document.getElementById("hamburger").style.visibility = "hidden"
+        document.getElementById("hamburger2").style.visibility = "hidden"
+        document.getElementById("hamburger3").style.visibility = "hidden"
+        document.getElementById("hamburger4").style.visibility = "hidden"
+        document.getElementById("hamburger5").style.visibility = "hidden"
+        document.getElementById("hamburger6").style.visibility = "hidden"
+        document.getElementById("hamburger7").style.visibility = "hidden"
+        document.getElementById("veggieBomb").style.visibility = "hidden"
+        document.getElementById("asparagus").style.visibility = "hidden"
+        document.getElementById("veggieBomb2").style.visibility = "hidden"
+        document.getElementById("asparagus2").style.visibility = "hidden"
+        document.getElementById("veggieBomb3").style.visibility = "hidden"
+        document.getElementById("asparagus3").style.visibility = "hidden"
+    }, 500);
+    setTimeout(() => {
+        document.getElementById("hamburger").style.visibility = "hidden"
+        document.getElementById("hamburger2").style.visibility = "hidden"
+        document.getElementById("hamburger3").style.visibility = "hidden"
+        document.getElementById("hamburger4").style.visibility = "hidden"
+        document.getElementById("hamburger5").style.visibility = "hidden"
+        document.getElementById("hamburger6").style.visibility = "hidden"
+        document.getElementById("hamburger7").style.visibility = "hidden"
+        document.getElementById("veggieBomb").style.visibility = "hidden"
+        document.getElementById("asparagus").style.visibility = "hidden"
+        document.getElementById("veggieBomb2").style.visibility = "hidden"
+        document.getElementById("asparagus2").style.visibility = "hidden"
+        document.getElementById("veggieBomb3").style.visibility = "hidden"
+        document.getElementById("asparagus3").style.visibility = "hidden"
+    }, 500);
+    setTimeout(() => {
+        document.getElementById("hamburger").style.visibility = "hidden"
+        document.getElementById("hamburger2").style.visibility = "hidden"
+        document.getElementById("hamburger3").style.visibility = "hidden"
+        document.getElementById("hamburger4").style.visibility = "hidden"
+        document.getElementById("hamburger5").style.visibility = "hidden"
+        document.getElementById("hamburger6").style.visibility = "hidden"
+        document.getElementById("hamburger7").style.visibility = "hidden"
+        document.getElementById("veggieBomb").style.visibility = "hidden"
+        document.getElementById("asparagus").style.visibility = "hidden"
+        document.getElementById("veggieBomb2").style.visibility = "hidden"
+        document.getElementById("asparagus2").style.visibility = "hidden"
+        document.getElementById("veggieBomb3").style.visibility = "hidden"
+        document.getElementById("asparagus3").style.visibility = "hidden"
+    }, 500);
+    setTimeout(() => {
+        document.getElementById("hamburger").style.visibility = "hidden"
+        document.getElementById("hamburger2").style.visibility = "hidden"
+        document.getElementById("hamburger3").style.visibility = "hidden"
+        document.getElementById("hamburger4").style.visibility = "hidden"
+        document.getElementById("hamburger5").style.visibility = "hidden"
+        document.getElementById("hamburger6").style.visibility = "hidden"
+        document.getElementById("hamburger7").style.visibility = "hidden"
+        document.getElementById("veggieBomb").style.visibility = "hidden"
+        document.getElementById("asparagus").style.visibility = "hidden"
+        document.getElementById("veggieBomb2").style.visibility = "hidden"
+        document.getElementById("asparagus2").style.visibility = "hidden"
+        document.getElementById("veggieBomb3").style.visibility = "hidden"
+        document.getElementById("asparagus3").style.visibility = "hidden"
+    }, 500);
+    setTimeout(() => {
+        document.getElementById("hamburger").style.visibility = "hidden"
+        document.getElementById("hamburger2").style.visibility = "hidden"
+        document.getElementById("hamburger3").style.visibility = "hidden"
+        document.getElementById("hamburger4").style.visibility = "hidden"
+        document.getElementById("hamburger5").style.visibility = "hidden"
+        document.getElementById("hamburger6").style.visibility = "hidden"
+        document.getElementById("hamburger7").style.visibility = "hidden"
+        document.getElementById("veggieBomb").style.visibility = "hidden"
+        document.getElementById("asparagus").style.visibility = "hidden"
+        document.getElementById("veggieBomb2").style.visibility = "hidden"
+        document.getElementById("asparagus2").style.visibility = "hidden"
+        document.getElementById("veggieBomb3").style.visibility = "hidden"
+        document.getElementById("asparagus3").style.visibility = "hidden"
+    }, 500);
+    setTimeout(() => {
+        document.getElementById("hamburger").style.visibility = "hidden"
+        document.getElementById("hamburger2").style.visibility = "hidden"
+        document.getElementById("hamburger3").style.visibility = "hidden"
+        document.getElementById("hamburger4").style.visibility = "hidden"
+        document.getElementById("hamburger5").style.visibility = "hidden"
+        document.getElementById("hamburger6").style.visibility = "hidden"
+        document.getElementById("hamburger7").style.visibility = "hidden"
+        document.getElementById("veggieBomb").style.visibility = "hidden"
+        document.getElementById("asparagus").style.visibility = "hidden"
+        document.getElementById("veggieBomb2").style.visibility = "hidden"
+        document.getElementById("asparagus2").style.visibility = "hidden"
+        document.getElementById("veggieBomb3").style.visibility = "hidden"
+        document.getElementById("asparagus3").style.visibility = "hidden"
+    }, 500);
+    setTimeout(() => {
+        document.getElementById("hamburger").style.visibility = "hidden"
+        document.getElementById("hamburger2").style.visibility = "hidden"
+        document.getElementById("hamburger3").style.visibility = "hidden"
+        document.getElementById("hamburger4").style.visibility = "hidden"
+        document.getElementById("hamburger5").style.visibility = "hidden"
+        document.getElementById("hamburger6").style.visibility = "hidden"
+        document.getElementById("hamburger7").style.visibility = "hidden"
+        document.getElementById("veggieBomb").style.visibility = "hidden"
+        document.getElementById("asparagus").style.visibility = "hidden"
+        document.getElementById("veggieBomb2").style.visibility = "hidden"
+        document.getElementById("asparagus2").style.visibility = "hidden"
+        document.getElementById("veggieBomb3").style.visibility = "hidden"
+        document.getElementById("asparagus3").style.visibility = "hidden"
+    }, 500);
+    setTimeout(() => {
+        document.getElementById("hamburger").style.visibility = "hidden"
+        document.getElementById("hamburger2").style.visibility = "hidden"
+        document.getElementById("hamburger3").style.visibility = "hidden"
+        document.getElementById("hamburger4").style.visibility = "hidden"
+        document.getElementById("hamburger5").style.visibility = "hidden"
+        document.getElementById("hamburger6").style.visibility = "hidden"
+        document.getElementById("hamburger7").style.visibility = "hidden"
+        document.getElementById("veggieBomb").style.visibility = "hidden"
+        document.getElementById("asparagus").style.visibility = "hidden"
+        document.getElementById("veggieBomb2").style.visibility = "hidden"
+        document.getElementById("asparagus2").style.visibility = "hidden"
+        document.getElementById("veggieBomb3").style.visibility = "hidden"
+        document.getElementById("asparagus3").style.visibility = "hidden"
+    }, 500);
+    setTimeout(() => {
+        document.getElementById("hamburger").style.visibility = "hidden"
+        document.getElementById("hamburger2").style.visibility = "hidden"
+        document.getElementById("hamburger3").style.visibility = "hidden"
+        document.getElementById("hamburger4").style.visibility = "hidden"
+        document.getElementById("hamburger5").style.visibility = "hidden"
+        document.getElementById("hamburger6").style.visibility = "hidden"
+        document.getElementById("hamburger7").style.visibility = "hidden"
+        document.getElementById("veggieBomb").style.visibility = "hidden"
+        document.getElementById("asparagus").style.visibility = "hidden"
+        document.getElementById("veggieBomb2").style.visibility = "hidden"
+        document.getElementById("asparagus2").style.visibility = "hidden"
+        document.getElementById("veggieBomb3").style.visibility = "hidden"
+        document.getElementById("asparagus3").style.visibility = "hidden"
+    }, 500);
     setTimeout(() => {
         location.reload()
-    }, 5000);
+    }, 3000);
 }
