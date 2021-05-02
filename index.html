@@ -2,19 +2,97 @@
 
 <head>
     <style>
-        #veggieBomb, #hamburger, #hamburger2, #hamburger3, #hamburger4, #hamburger5, #hamburger6, #hamburger7, #asparagus, #asparagus2, #veggieBomb2, #asparagus3, #veggieBomb3 {
+        #veggieBomb,
+        #hamburger,
+        #hamburger2,
+        #hamburger3,
+        #hamburger4,
+        #hamburger5,
+        #hamburger6,
+        #hamburger7,
+        #asparagus,
+        #asparagus2,
+        #veggieBomb2,
+        #asparagus3,
+        #veggieBomb3 {
             position: fixed;
         }
-        
+
+        #score {
+            position: absolute;
+            top: 2px;
+            left: 16px;
+        }
+
+        #highscore {
+            position: absolute;
+            top: 40px;
+            left: 16px;
+        }
+
+        #speed {
+            position: absolute;
+            top: 18px;
+            left: 16px;
+        }
+
+        #win {
+            position: absolute;
+            top: 35px;
+            left: 16px;
+        }
+
+        #btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border-radius: 5px;
+        }
+        #btn2 {
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border-radius: 5px;
+        } 
+
+        #Directions {
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            font-size: 16px;
+            padding: 12px 24px;
+            border-radius: 5px;
+        }
+
+        #Back {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
     <script type="text/javascript" src="game.js">
 
     </script>
 </head>
 
-<body>
-    <button onClick = "Init()">START</button>
-    <p id="win">Click START To Begin</p>
+<body onload="hideAll()">
+    <button id="btn" onClick="Init()">START</button>
+    <button id="btn2" onClick="revealDirections()">Directions</button>
+    <p id="Directions">Your goal is to click the burgers. Clicking a burger gives you one point. If you miss you lose a point. You do not want to click on the bombs. If you do you lose. HAVE FUN!!</p>
+    <p id="win"></p>
     <p id="score"></p>
     <p id="highscore"></p>
     <p id="speed"></p>
@@ -29,10 +107,10 @@
     <img id="hamburger5" src="projectImages/bURGEFR3.png" onClick="hideBurger5()" style=" width: 100; height: 100;" />
     <img id="hamburger6" src="projectImages/bURGEFR3.png" onClick="hideBurger6()" style=" width: 100; height: 100;" />
     <img id="hamburger7" src="projectImages/bURGEFR3.png" onClick="hideBurger7()" style=" width: 100; height: 100;" />
-    <img id="Back" src="projectImages/Background.png" onClick="BackGround()" style=" width:1410; height: 660;" />
-    <img id="asparagus" src = "projectImages/asparagus.png" onClick="lose()" style="width:100; height:100;" />
-    <img id="asparagus2" src = "projectImages/asparagus.png" onClick="lose()" style="width:100; height:100;" />
-    <img id="asparagus3" src = "projectImages/asparagus.png" onClick="lose()" style="width:100; height:100;" />
+    <img id="Back" src="projectImages/Background.png" onClick="BackGround()" style=" width:1430; height: 800;" />
+    <img id="asparagus" src="projectImages/asparagus.png" onClick="lose()" style="width:100; height:100;" />
+    <img id="asparagus2" src="projectImages/asparagus.png" onClick="lose()" style="width:100; height:100;" />
+    <img id="asparagus3" src="projectImages/asparagus.png" onClick="lose()" style="width:100; height:100;" />
 
 </body>
 
