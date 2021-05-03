@@ -140,6 +140,7 @@ document.addEventListener("keydown", event => {
     switch (event.keyCode) {
             case 32:
                 Init();
+                document.getElementById("Directions").style.visbility = "hidden"
             case 16:
                 revealDirections();
     }
