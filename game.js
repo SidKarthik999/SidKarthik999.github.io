@@ -357,12 +357,12 @@ function lose() {
     document.getElementById("win").style.visibility = "visible"
     document.getElementById("Back2").style.visibility = "visible"
     document.getElementById("win").innerHTML = loss;
-    document.getElementById("win").style.left = "650px";
-    document.getElementById("win").style.top = "300px";
+    document.getElementById("win").style.left = "42%";
+    document.getElementById("win").style.top = "50%";
     document.getElementById("win").style.fontSize = "xx-large"
     document.getElementById("score").style.fontSize = "xx-large"
-    document.getElementById("score").style.left = "630px"
-    document.getElementById("score").style.top = "200px"
+    document.getElementById("score").style.left = "42%"
+    document.getElementById("score").style.top = "40%"
     document.getElementById("score").innerHTML = "You got " + score + " points"
     console.log(loss)
     document.getElementById("speed").style.visibility = "hidden"
