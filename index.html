@@ -21,11 +21,11 @@
 
         #score {
             position: absolute;
-            top: 0px;
+            top: 2px;
             left: 16px;
             z-index: 40;
             font-size: 125%;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         }
 
         #highscore {
@@ -34,7 +34,7 @@
             left: 16px;
             z-index: 40;
             font-size: 125%;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         }
 
         #speed {
@@ -43,7 +43,16 @@
             left: 16px;
             z-index: 40;
             font-size: 125%;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        #keys {
+            position: absolute;
+            top: 18px;
+            left: 16px;
+            z-index: 40;
+            font-size: 125%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         }
 
         #win {
@@ -53,10 +62,10 @@
             z-index: 40;
             font-size: 125%;
             color: red;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         }
 
-        #btn{
+        #btn {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -68,6 +77,7 @@
             padding: 12px 24px;
             border-radius: 5px;
         }
+
         #btn2 {
             position: absolute;
             top: 57%;
@@ -79,7 +89,7 @@
             font-size: 16px;
             padding: 12px 24px;
             border-radius: 5px;
-        } 
+        }
 
         #Directions {
             position: absolute;
@@ -91,6 +101,7 @@
             padding: 12px 24px;
             border-radius: 5px;
         }
+
         #Back2 {
             position: absolute;
             top: 0px;
@@ -98,8 +109,9 @@
             max-width: 100%;
             height: auto;
             z-index: 30;
-            
+
         }
+
         #Back {
             top: 0px;
             left: 0px;
@@ -116,11 +128,13 @@
 <body onload="hideAll()">
     <button id="btn" onClick="Init()">START</button>
     <button id="btn2" onClick="revealDirections()">Directions</button>
-    <p id="Directions">Your goal is to click the burgers. Clicking a burger gives you one point. If you miss you lose a point. You do not want to click on the bombs. If you do you lose. HAVE FUN!!</p>
+    <p id="Directions">Your goal is to click the burgers. Clicking a burger gives you one point. If you miss you lose a
+        point. You do not want to click on the bombs. If you do you lose. HAVE FUN!!</p>
     <p id="win"></p>
     <p id="score"></p>
     <p id="highscore"></p>
     <p id="speed"></p>
+    <p id="keys">Click the space bar to start. Click the shift key for more instructions.</p>
 
     <img id="veggieBomb" src="projectImages/veggie.png" onClick="lose()" style=" width: 100; height: 100;" />
     <img id="veggieBomb2" src="projectImages/veggie.png" onClick="lose()" style=" width: 100; height: 100;" />
