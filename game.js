@@ -35,10 +35,11 @@ function hideAll() {
 }
 
 function Init() {
+    document.getElementById("Directions").style.visibility = "hidden"
+    document.getElementById("keys").style.visibility = "hidden"
     document.getElementById("btn").style.visibility = "hidden"
     document.getElementById("win").style.visibility = "hidden"
     document.getElementById("btn2").style.visibility = "hidden"
-    document.getElementById("Directions").style.visibility = "hidden"
     bomb = document.getElementById("veggieBomb");
     asparagus = document.getElementById("asparagus")
     bomb2 = document.getElementById("veggieBomb2");
@@ -138,7 +139,9 @@ function Init() {
 document.addEventListener("keydown", event => {
     switch (event.keyCode) {
             case 32:
-                Init()
+                Init();
+            case 16:
+                revealDirections();
     }
 }
 
