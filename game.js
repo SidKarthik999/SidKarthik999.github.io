@@ -17,6 +17,7 @@ function revealDirections() {
 }
 
 function hideAll() {
+    document.getElementById("Back3").style.visibility = "hidden"    
     document.getElementById("Back2").style.visibility = "hidden"
     document.getElementById("veggieBomb").style.visibility = "hidden"
     document.getElementById("asparagus").style.visibility = "hidden"
@@ -35,11 +36,13 @@ function hideAll() {
 }
 
 function Init() {
+    document.getElementById("Back3").style.visibility = "visible"
     document.getElementById("keys").style.visibility = "hidden"
     document.getElementById("Directions").style.visibility = "hidden"
     document.getElementById("btn").style.visibility = "hidden"
     document.getElementById("win").style.visibility = "hidden"
     document.getElementById("btn2").style.visibility = "hidden"
+
     bomb = document.getElementById("veggieBomb");
     asparagus = document.getElementById("asparagus")
     bomb2 = document.getElementById("veggieBomb2");
@@ -98,99 +101,98 @@ function Init() {
 
     burger7W = screen.height - burger7.height;
     burger7H = screen.width - burger7.width;
-    
+
     bombW = screen.height - bomb.height;
     bombH = screen.width - bomb.width;
 
     bomb2W = screen.height - bomb2.height;
     bomb2H = screen.width - bomb2.width;
-    
+
     bomb3W = screen.height - bomb3.height;
     bomb3H = screen.width - bomb3.width;
 
     document.getElementById("speed").innerHTML = "We're Starting Off Slow"
     document.getElementById("win").innerHTML = "You're Playing The Game";
-    
-    burger.style.top = Math.round(Math.random()*burgerW) + "px"
-    burger.style.left = Math.round(Math.random()*burgerH) + "px"
 
-    burger2.style.top = Math.round(Math.random()*burger2W) + "px"
-    burger2.style.left = Math.round(Math.random()*burger2H) + "px"
+    burger.style.top = Math.round(Math.random() * burgerW) + "px"
+    burger.style.left = Math.round(Math.random() * burgerH) + "px"
 
-    burger3.style.top = Math.round(Math.random()*burger3W) + "px"
-    burger3.style.left = Math.round(Math.random()*burger3H) + "px"
-    
-    burger4.style.top = Math.round(Math.random()*burger4W) + "px"
-    burger4.style.left = Math.round(Math.random()*burger4H) + "px"
+    burger2.style.top = Math.round(Math.random() * burger2W) + "px"
+    burger2.style.left = Math.round(Math.random() * burger2H) + "px"
 
-    burger5.style.top = Math.round(Math.random()*burger5W) + "px"
-    burger5.style.left = Math.round(Math.random()*burger5H) + "px"
+    burger3.style.top = Math.round(Math.random() * burger3W) + "px"
+    burger3.style.left = Math.round(Math.random() * burger3H) + "px"
 
-    burger6.style.top = Math.round(Math.random()*burger6W) + "px"
-    burger6.style.left = Math.round(Math.random()*burger6H) + "px"
+    burger4.style.top = Math.round(Math.random() * burger4W) + "px"
+    burger4.style.left = Math.round(Math.random() * burger4H) + "px"
 
-    burger7.style.top = Math.round(Math.random()*burger7W) + "px"
-    burger7.style.left = Math.round(Math.random()*burger7H) + "px"
-    
+    burger5.style.top = Math.round(Math.random() * burger5W) + "px"
+    burger5.style.left = Math.round(Math.random() * burger5H) + "px"
+
+    burger6.style.top = Math.round(Math.random() * burger6W) + "px"
+    burger6.style.left = Math.round(Math.random() * burger6H) + "px"
+
+    burger7.style.top = Math.round(Math.random() * burger7W) + "px"
+    burger7.style.left = Math.round(Math.random() * burger7H) + "px"
+
     setInterval(moveIt, 1000)
     setInterval(moveBurger, 5000)
 }
 
 document.addEventListener("keydown", event => {
     switch (event.keyCode) {
-            case 32:
+        case 32:
                 Init();
-                document.getElementById("Directions").style.visbility = "hidden"
-            case 16:
-                revealDirections();
+                document.getElementById("Directions").style.visibility = "hidden"
+
+        case 16:
+            revealDirections();
+
     }
-}
-
-
-)
+})
 
 function moveIt() {
-    bomb.style.top = Math.round(Math.random()*bombW) + "px"
-    bomb.style.left = Math.round(Math.random()*bombH) + "px"
+    bomb.style.top = Math.round(Math.random() * bombW) + "px"
+    bomb.style.left = Math.round(Math.random() * bombH) + "px"
 
-    asparagus.style.top = Math.round(Math.random()*asparagusW) + "px"
-    asparagus.style.left = Math.round(Math.random()*asparagusH) + "px"
+    asparagus.style.top = Math.round(Math.random() * asparagusW) + "px"
+    asparagus.style.left = Math.round(Math.random() * asparagusH) + "px"
 
-    bomb2.style.top = Math.round(Math.random()*bomb2W) + "px"
-    bomb2.style.left = Math.round(Math.random()*bomb2H) + "px"
+    bomb2.style.top = Math.round(Math.random() * bomb2W) + "px"
+    bomb2.style.left = Math.round(Math.random() * bomb2H) + "px"
 
-    asparagus2.style.top = Math.round(Math.random()*asparagus2W) + "px"
-    asparagus2.style.left = Math.round(Math.random()*asparagus2H) + "px"
+    asparagus2.style.top = Math.round(Math.random() * asparagus2W) + "px"
+    asparagus2.style.left = Math.round(Math.random() * asparagus2H) + "px"
 
-    bomb3.style.top = Math.round(Math.random()*bomb3W) + "px"
-    bomb3.style.left = Math.round(Math.random()*bomb3H) + "px"
+    bomb3.style.top = Math.round(Math.random() * bomb3W) + "px"
+    bomb3.style.left = Math.round(Math.random() * bomb3H) + "px"
 
-    asparagus3.style.top = Math.round(Math.random()*asparagus3W) + "px"
-    asparagus3.style.left = Math.round(Math.random()*asparagus3H) + "px"
+    asparagus3.style.top = Math.round(Math.random() * asparagus3W) + "px"
+    asparagus3.style.left = Math.round(Math.random() * asparagus3H) + "px"
 }
 
 function moveBurger() {
 
-    burger.style.top = Math.round(Math.random()*burgerW) + "px"
-    burger.style.left = Math.round(Math.random()*burgerH) + "px"
+    burger.style.top = Math.round(Math.random() * burgerW) + "px"
+    burger.style.left = Math.round(Math.random() * burgerH) + "px"
 
-    burger2.style.top = Math.round(Math.random()*burger2W) + "px"
-    burger2.style.left = Math.round(Math.random()*burger2H) + "px"
+    burger2.style.top = Math.round(Math.random() * burger2W) + "px"
+    burger2.style.left = Math.round(Math.random() * burger2H) + "px"
 
-    burger3.style.top = Math.round(Math.random()*burger3W) + "px"
-    burger3.style.left = Math.round(Math.random()*burger3H) + "px"
-    
-    burger4.style.top = Math.round(Math.random()*burger4W) + "px"
-    burger4.style.left = Math.round(Math.random()*burger4H) + "px"
+    burger3.style.top = Math.round(Math.random() * burger3W) + "px"
+    burger3.style.left = Math.round(Math.random() * burger3H) + "px"
 
-    burger5.style.top = Math.round(Math.random()*burger5W) + "px"
-    burger5.style.left = Math.round(Math.random()*burger5H) + "px"
+    burger4.style.top = Math.round(Math.random() * burger4W) + "px"
+    burger4.style.left = Math.round(Math.random() * burger4H) + "px"
 
-    burger6.style.top = Math.round(Math.random()*burger6W) + "px"
-    burger6.style.left = Math.round(Math.random()*burger6H) + "px"
+    burger5.style.top = Math.round(Math.random() * burger5W) + "px"
+    burger5.style.left = Math.round(Math.random() * burger5H) + "px"
 
-    burger7.style.top = Math.round(Math.random()*burger7W) + "px"
-    burger7.style.left = Math.round(Math.random()*burger7H) + "px"
+    burger6.style.top = Math.round(Math.random() * burger6W) + "px"
+    burger6.style.left = Math.round(Math.random() * burger6H) + "px"
+
+    burger7.style.top = Math.round(Math.random() * burger7W) + "px"
+    burger7.style.left = Math.round(Math.random() * burger7H) + "px"
 }
 var score = 0;
 var highscore = localStorage.getItem("highscore");
@@ -216,14 +218,14 @@ function hideBurger1() {
     document.getElementById("hamburger").style.visibility = "hidden";
     score = score + 1
     document.getElementById("score").innerHTML = score;
-    if(score>= 21){
+    if (score >= 21) {
         document.getElementById("speed").innerHTML = "Now We're Faster"
         console.log("faster")
         setTimeout(() => {
             document.getElementById("hamburger").style.visibility = "visible";
         }, 3000);
     }
-    if(score>= 60){
+    if (score >= 60) {
         document.getElementById("speed").innerHTML = "Now We're SUPER SPEED"
         setTimeout(() => {
             document.getElementById("hamburger").style.visibility = "visible";
@@ -238,14 +240,14 @@ function hideBurger2() {
     document.getElementById("hamburger2").style.visibility = "hidden";
     score = score + 1
     document.getElementById("score").innerHTML = score;
-    if(score>= 21){
+    if (score >= 21) {
         document.getElementById("speed").innerHTML = "Now We're Faster"
         console.log("faster")
         setTimeout(() => {
             document.getElementById("hamburger2").style.visibility = "visible";
         }, 3000);
     }
-    if(score>= 60){
+    if (score >= 60) {
         document.getElementById("speed").innerHTML = "Now We're SUPER SPEED"
         setTimeout(() => {
             document.getElementById("hamburger2").style.visibility = "visible";
@@ -260,14 +262,14 @@ function hideBurger3() {
     document.getElementById("hamburger3").style.visibility = "hidden";
     score = score + 1
     document.getElementById("score").innerHTML = score;
-    if(score>= 21){
+    if (score >= 21) {
         document.getElementById("speed").innerHTML = "Now We're Faster"
         console.log("faster")
         setTimeout(() => {
             document.getElementById("hamburger3").style.visibility = "visible";
         }, 3000);
     }
-    if(score>= 60){
+    if (score >= 60) {
         document.getElementById("speed").innerHTML = "Now We're SUPER SPEED"
         setTimeout(() => {
             document.getElementById("hamburger3").style.visibility = "visible";
@@ -282,14 +284,14 @@ function hideBurger4() {
     document.getElementById("hamburger4").style.visibility = "hidden";
     score = score + 1
     document.getElementById("score").innerHTML = score;
-    if(score>= 21){
+    if (score >= 21) {
         document.getElementById("speed").innerHTML = "Now We're Faster"
         console.log("faster")
         setTimeout(() => {
             document.getElementById("hamburger4").style.visibility = "visible";
         }, 3000);
     }
-    if(score>= 60){
+    if (score >= 60) {
         document.getElementById("speed").innerHTML = "Now We're SUPER SPEED"
         setTimeout(() => {
             document.getElementById("hamburger4").style.visibility = "visible";
@@ -304,14 +306,14 @@ function hideBurger5() {
     document.getElementById("hamburger5").style.visibility = "hidden";
     score = score + 1
     document.getElementById("score").innerHTML = score;
-    if(score>= 21){
+    if (score >= 21) {
         document.getElementById("speed").innerHTML = "Now We're Faster"
         console.log("faster")
         setTimeout(() => {
             document.getElementById("hamburger5").style.visibility = "visible";
         }, 3000);
     }
-    if(score>= 60){
+    if (score >= 60) {
         document.getElementById("speed").innerHTML = "Now We're SUPER SPEED"
         setTimeout(() => {
             document.getElementById("hamburger5").style.visibility = "visible";
@@ -326,15 +328,15 @@ function hideBurger6() {
     document.getElementById("hamburger6").style.visibility = "hidden";
     score = score + 1
     document.getElementById("score").innerHTML = score;
-    if(score>= 21){
+    if (score >= 21) {
         document.getElementById("speed").innerHTML = "Now We're Faster"
         console.log("faster")
         setTimeout(() => {
             document.getElementById("hamburger6").style.visibility = "visible";
-            
+
         }, 3000);
     }
-    if(score>= 60){
+    if (score >= 60) {
         document.getElementById("speed").innerHTML = "Now We're SUPER SPEED"
         setTimeout(() => {
             document.getElementById("hamburger6").style.visibility = "visible";
@@ -349,14 +351,14 @@ function hideBurger7() {
     document.getElementById("hamburger7").style.visibility = "hidden";
     score = score + 1
     document.getElementById("score").innerHTML = score;
-    if(score>= 21){
+    if (score >= 21) {
         document.getElementById("speed").innerHTML = "Now We're Faster"
         console.log("faster")
         setTimeout(() => {
             document.getElementById("hamburger7").style.visibility = "visible";
         }, 3000);
     }
-    if(score>= 60){
+    if (score >= 60) {
         document.getElementById("speed").innerHTML = "Now We're SUPER SPEED"
         setTimeout(() => {
             document.getElementById("hamburger7").style.visibility = "visible";
