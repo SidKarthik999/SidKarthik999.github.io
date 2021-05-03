@@ -35,8 +35,8 @@ function hideAll() {
 }
 
 function Init() {
-    document.getElementById("Directions").style.visibility = "hidden"
     document.getElementById("keys").style.visibility = "hidden"
+    document.getElementById("Directions").style.visibility = "hidden"
     document.getElementById("btn").style.visibility = "hidden"
     document.getElementById("win").style.visibility = "hidden"
     document.getElementById("btn2").style.visibility = "hidden"
