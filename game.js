@@ -7,6 +7,8 @@
 
 var speed = "Slow"
 
+
+
 function revealDirections() {
 
     document.getElementById("btn2").style.visibility = "hidden"
@@ -132,6 +134,16 @@ function Init() {
     setInterval(moveIt, 1000)
     setInterval(moveBurger, 5000)
 }
+
+document.addEventListener("keydown", event => {
+    switch (event.keyCode) {
+            case 32:
+                Init()
+    }
+}
+
+
+)
 
 function moveIt() {
     bomb.style.top = Math.round(Math.random()*bombW) + "px"
