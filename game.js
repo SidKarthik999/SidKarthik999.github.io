@@ -365,6 +365,7 @@ function lose() {
     document.getElementById("score").style.top = "200px"
     document.getElementById("score").innerHTML = "You got " + score + " points"
     console.log(loss)
+    document.getElementById("speed").style.visibility = "hidden"
     document.getElementById("hamburger").style.visibility = "hidden"
     document.getElementById("hamburger2").style.visibility = "hidden"
     document.getElementById("hamburger3").style.visibility = "hidden"
