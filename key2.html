@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prison: The Experience</title>
+    </head>
+    <body>
+        <style>
+        body{
+            background-color: black;
+          }
+        </style>
+        <img src="key.png" alt="Key" style="visibility: visible;" id="key1">
+        <img src="key.png" alt="Key" style="visibility: visible;" id="key2">
+        <img src="key.png" alt="Key" style="visibility: hidden;" id="key3">
+        <img src="key.png" alt="Key" style="visibility: hidden;" id="key4">
+        <img src="key.png" alt="Key" style="visibility: hidden" id="key5">
+        <img src="arrow.png" alt="CLICK HERE" style="position: absolute; left: 64%; top: 26%; z-index: 3; height: 5%; width: 3%; transform: rotate(90deg);">
+        <img src="prisoner.png" alt="Prisoner" style="height: 6%; width: 5%; position: absolute; left: 50%; top: 68%; z-index: 2;">
+        <img src="TraditionalPrisonBackground.png" style="position:absolute; z-index: 1; left: 25%;" usemap="#workmap">
+
+        <map name="workmap">
+
+            <area shape="rect" coords="315,478,342,547" onclick="alert('You have already completed this interaction.')">
+            <area shape="rect" coords="654,579,517,436" onclick="alert('You have already completed this interaction.')">
+            <area shape="rect" coords="517,204,653,341" href="convo3.html">
+            
+        </map>
+    </body>
+</html>

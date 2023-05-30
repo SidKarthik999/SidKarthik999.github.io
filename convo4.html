@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prison: The Experience</title>
+        <script src="convo4.js"></script>
+    </head>
+    <body>
+        <style>
+            body{
+                background-color: black;
+              }
+            .container {
+                position: relative;
+            }
+
+                
+            .text-block {
+                position: absolute;
+                color: red;
+                top: 200px;
+                left:150px;
+
+            }
+
+            .nextArrow {
+                position: absolute;
+                top: 340px;
+                left: 1200px;
+            }
+            
+            .run-animation{
+                color: blue; 
+                font-family: "Courier";
+                font-size: 38px;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 30em;
+                animation: type 3s steps(60, end);
+
+            }
+
+            @keyframes type{
+                from { width: 0;}
+            }
+            </style>
+        <div>
+            <img src="BackButton.png" alt="BackButton" onclick="back()" style="width: 5%; height: 5%;">
+        </div>
+        <img src="prisoner2.png" alt="Prison Guard" style="width: 25%; height: 25%; padding-left: 22%;">
+        <img src="prisoner.png" alt="Prisoner" style="width: 25%; height: 25%;">
+        <div class="container">
+            <img src="textbox.png" alt="TextBox" style="padding-top: 10%; padding-left: 8%;">
+            <div class="text-block">
+                <p id="PrisonGuardIntro" class="run-animation">You my new cell mate?</p>
+            </div>
+            <div class="nextArrow">
+                <img src="NextArrow.png" alt="NextArrow" style="height: 10%; width: 10%;" id="nextButton" onclick="TextReplace()">
+            </div>
+        </div>
+    </body>
+</html>
